@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Class Timetable</a>
+    </nav>
+
+    <!-- Timetable Section -->
+    <div class="container mt-4">
+        <h2 class="text-center">Class Timetable (9AM - 2PM)</h2>
+        <table class="table table-bordered text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Days</th>
+                    <th>9:00 - 10:00 AM</th>
+                    <th>10:00 - 11:00 AM</th>
+                    <th>11:00 - 12:00 PM</th>
+                    <th>12:00 - 12:30 PM</th> <!-- Break Time -->
+                    <th>12:30 - 1:30 PM</th>
+                    <th>1:30 - 2:00 PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td class="clickable" data-teacher="Mr. A" data-subject="Mathematics"><a href="teacher.html">Maths (Mr. A)</a></td>
+                    <td class="clickable" data-teacher="Mrs. B" data-subject="Science"><a href="teacher.html">Science (Mrs. B)</a></td>
+                    <td class="clickable" data-teacher="Mr. C" data-subject="English"><a href="teacher.html">English (Mr. C)</a></td>
+                    <td class="break-time">Break</td>
+                    <td class="clickable" data-teacher="Mr. D" data-subject="History"><a href="teacher.html">History (Mr. D)</a></td>
+                    <td class="clickable" data-teacher="Mrs. E" data-subject="Geography"><a href="teacher.html">Geography (Mrs. E)</a></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td class="clickable" data-teacher="Mrs. F" data-subject="Physics"><a href="teacher.html">Physics (Mrs. F)</a></td>
+                    <td class="clickable" data-teacher="Mr. G" data-subject="Chemistry"><a href="teacher.html">Chemistry (Mr. G)</a></td>
+                    <td class="clickable" data-teacher="Mr. A" data-subject="Mathematics"><a href="teacher.html">Maths (Mr. A)</a></td>
+                    <td class="break-time">Break</td>
+                    <td class="clickable" data-teacher="Mrs. H" data-subject="Biology"><a href="teacher.html">Biology (Mrs. H)</a></td>
+                    <td class="clickable" data-teacher="Mr. I" data-subject="Economics"><a href="teacher.html">Economics (Mr. I)</a></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td class="clickable" data-teacher="Mr. J" data-subject="Computer Science"><a href="teacher.html">CS (Mr. J)</a></td>
+                    <td class="clickable" data-teacher="Mrs. K" data-subject="Art"><a href="teacher.html">Art (Mrs. K)</a></td>
+                    <td class="clickable" data-teacher="Mr. L" data-subject="Physical Education"><a href="teacher.html">PE (Mr. L)</a></td>
+                    <td class="break-time">Break</td>
+                    <td class="clickable" data-teacher="Mrs. M" data-subject="Music"><a href="teacher.html">Music (Mrs. M)</a></td>
+                    <td class="clickable" data-teacher="Mr. N" data-subject="Mathematics"><a href="teacher.html">Maths (Mr. N)</a></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td class="clickable" data-teacher="Mr. O" data-subject="Geography"><a href="teacher.html">Geography (Mr. O)</a></td>
+                    <td class="clickable" data-teacher="Mrs. P" data-subject="English"><a href="teacher.html">English (Mrs. P)</a></td>
+                    <td class="clickable" data-teacher="Mr. Q" data-subject="History"><a href="teacher.html">History (Mr. Q)</a></td>
+                    <td class="break-time">Break</td>
+                    <td class="clickable" data-teacher="Mrs. R" data-subject="Maths"><a href="teacher.html">Maths (Mrs. R)</a></td>
+                    <td class="clickable" data-teacher="Mr. S" data-subject="Physics"><a href="teacher.html">Physics (Mr. S)</a></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td class="clickable" data-teacher="Mr. T" data-subject="Chemistry"><a href="teacher.html">Chemistry (Mr. T)</a></td>
+                    <td class="clickable" data-teacher="Mrs. U" data-subject="Biology"><a href="teacher.html">Biology (Mrs. U)</a></td>
+                    <td class="clickable" data-teacher="Mr. V" data-subject="History"><a href="teacher.html">History (Mr. V)</a></td>
+                    <td class="break-time">Break</td>
+                    <td class="clickable" data-teacher="Mrs. W" data-subject="Geography"><a href="teacher.html">Geography (Mrs. W)</a></td>
+                    <td class="clickable" data-teacher="Mr. X" data-subject="Economics"><a href="teacher.html">Economics (Mr. X)</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 Class Timetable. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

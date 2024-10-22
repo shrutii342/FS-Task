@@ -1,0 +1,28 @@
+/* Break Time Styling */
+.break-time {
+    background-color: #f8d7da;
+    font-weight: bold;
+    color: #721c24;
+}
+
+/* Hover effect on clickable cells */
+.clickable:hover {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styling the table */
+.table {
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
