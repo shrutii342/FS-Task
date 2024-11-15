@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall Clock, Stopwatch, Alarm & Timer</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Clock</h1>
+    <div id="clock" class="section active">
+        <p id="currentTime">---:---:---</p>
+    </div>
+
+    <div id="stopwatch" class="section">
+        <p id="stopwatchTime">00:00:00</p>
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+        <button onclick="resetStopwatch()">Reset</button>
+    </div>
+
+    <div id="timer" class="section">
+        <input type="number" id="timerMinutes" placeholder="Minutes">
+        <input type="number" id="timerSeconds" placeholder="Seconds">
+        <button onclick="startTimer()">Start Timer</button>
+        <button onclick="stopTimer()">Stop</button>
+        <button onclick="resetTimer()">Reset</button>
+        <p id="timerDisplay">00:00</p>
+    </div>
+
+    <div id="alarm" class="section">
+        <input type="time" id="alarmTime">
+        <button onclick="setAlarm()">Set Alarm</button>
+        <button onclick="clearAlarm()">Clear Alarm</button>
+        <p id="alarmStatus">Alarm not set</p>
+    </div>
+
+    <div class="controls">
+        <button onclick="showSection('clock')">Clock</button>
+        <button onclick="showSection('stopwatch')">Stopwatch</button>
+        <button onclick="showSection('timer')">Timer</button>
+        <button onclick="showSection('alarm')">Alarm</button>
+    </div>
+</div>
+
+<script src="clock.js"></script>
+</body>
+</html>
